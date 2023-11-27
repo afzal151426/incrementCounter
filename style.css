@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-size: 22px;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: url(./images/th.jpg) no-repeat;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+}
+body::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+opacity: 0.8;
+}
+.container{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.counter{
+    text-align: center;
+    margin: 1rem;
+    background: orangered;
+    border-radius: 5px;
+    width: 200px;
+    height: 220px;
+    display: grid;
+    place-content: center;
+}
+.counter i,.counter .number{
+    font-size: 3rem;
+}
